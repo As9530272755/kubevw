@@ -15,22 +15,21 @@ The leader's solution is to manage the ns of the business by generating individu
 
 
 
+
 **Kubectl automatic container creation tool design:**
 
 
-1. write a command line tool
+1. the kubeconfig file can be automatically obtained in the command line tool
 
-2. the config file can be automatically transferred in the command line tool
+2. enter container name
 
-3. enter container name
+3. input and use image
 
-4. input and use image
+4. replace the config file in the container
 
-5. replace the config file in the container
+5. implement k8s context switching in the container
 
-6. realize k8s context switching in the container
-
-1 build code is binary
+6. implement external command operation on the inside of the container
 
 **需求：**
 
@@ -42,13 +41,12 @@ The leader's solution is to manage the ns of the business by generating individu
 
 **kubectl 自动创建容器工具设计：**
 
-1. 编写一个命令行工具
-2. 在该命令行工具中能够自动传递 config 文件
-3. 输入容器 name
-4. 输入使用 image
-5. 在容器中替换 config 文件
-6. 实现对容器中做 K8S 上下文切换
-
+1. 在该命令行工具中能够自动获取 kubeconfig 文件
+2. 输入容器 name
+3. 输入使用 image
+4. 在容器中替换 config 文件
+5. 实现对容器中做 K8S 上下文切换
+6. 实现外部实现对容器内部的命令操作
 
 **Example:**
 
