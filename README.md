@@ -44,6 +44,8 @@ The leader's solution is to manage the ns of the business by generating individu
 6. 实现对容器中做 K8S 上下文切换
 
 
+**Example**
+1 build code is binary
 ```bash
 
 $ go build -o kubevw
